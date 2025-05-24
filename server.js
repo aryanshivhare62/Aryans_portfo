@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/login', (req, res) => {
+  res.send('login success');
+});
+
 app.listen(PORT, ()=>{
     console.log('server started');
 } )
