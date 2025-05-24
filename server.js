@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.send('login success');
+  res.sendFile(path.join(__dirname, 'portfolio.html'));
 });
 
 app.listen(PORT, ()=>{
